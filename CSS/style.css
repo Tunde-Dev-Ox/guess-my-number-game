@@ -1,0 +1,306 @@
+@font-face {
+  font-family: larseitt, sans-serif;
+  src: url(/larsseit-bold.woff2);
+}
+@font-face {
+  font-family: circular, sans-serif;
+  src: url(/circular-pro-book.woff2);
+}
+body {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+body .main-body {
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.game-header-wrapper {
+  width: 100%;
+  height: 65px;
+  background-color: rgb(255, 255, 255);
+  padding: 14px 0;
+  position: fixed;
+  top: 0;
+  z-index: 34;
+}
+
+.nav-wrapper {
+  max-width: 73.125rem;
+  padding: 0 4vw;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+}
+
+.logo {
+  width: 40% px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.logo-content {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 1.1;
+  text-decoration: none;
+  color: #000;
+  font-family: "Dosis", sans-serif;
+}
+
+.toggle input[type=checkbox] {
+  display: none;
+}
+
+.toggle label {
+  background-color: #ffffff;
+  border: 2px solid #555;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all ease-in-out 0.3s;
+  width: 50px;
+  height: 28px;
+}
+.toggle label::after {
+  background-color: #000;
+  position: absolute;
+  border-radius: 50px;
+  content: "";
+  cursor: pointer;
+  display: inline-block;
+  left: 2px;
+  top: 2px;
+  transition: all ease-in-out 0.3s;
+  width: 25px;
+  height: 20px;
+}
+
+.toggle input[type=checkbox]:checked ~ label {
+  background-color: #fff;
+  border-color: #320829;
+}
+
+.toggle input[type=checkbox]:checked ~ label::after {
+  background-color: #000000;
+  transform: translateX(16px);
+}
+
+body.dark-theme {
+  background-color: #000;
+}
+
+.home-section {
+  padding-top: 4rem;
+}
+.home-section .home--body-container {
+  max-width: 73.125rem;
+  padding: 0 4vw;
+  margin: 0 auto;
+  margin-top: 1rem;
+  padding-bottom: 12px;
+}
+.home-section .home--body-container .video-wrapper {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+  min-height: 250px;
+}
+.home-section .home--body-container .video-wrapper .game-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.home-section .content {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.content-header {
+  text-align: center;
+  font-size: 37px;
+  font-weight: 600;
+  line-height: 1;
+  color: #000;
+  margin-bottom: 1rem;
+  font-family: larseitt, sans-serif;
+}
+
+.content-paragraph {
+  font-size: 18px;
+  color: #000;
+  line-height: 1.1;
+  text-align: start;
+  margin-bottom: 10px;
+  font-family: circular, sans-serif;
+}
+
+.start-game {
+  width: 100%;
+  background-color: #320829;
+  padding: 10px;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 28px;
+}
+
+.play-game-main {
+  padding-top: 5rem;
+  width: 100%;
+}
+
+.top-nav {
+  display: flex;
+  max-width: 73.125rem;
+  padding: 0 4vw;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+.top-nav .between {
+  font-size: 18px;
+  color: #fff;
+  line-height: 1.1;
+  background-color: #000;
+  padding: 10px;
+  font-family: circular, sans-serif;
+}
+.top-nav .again {
+  padding: 9px 19px;
+  color: #fff;
+  background-color: #000;
+  font-size: 16px;
+  border: 1px solid #000;
+  font-family: circular, sans-serif;
+}
+
+.guess--wrapper {
+  display: flex;
+  flex-direction: column;
+  max-width: 73.125rem;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 4vw;
+  margin-bottom: 1rem;
+}
+.guess--wrapper .guess-content {
+  font-size: 30px;
+  font-family: larseitt, sans-serif;
+  font-weight: 500;
+  text-transform: capitalize;
+  margin-bottom: 18px;
+}
+.guess--wrapper .question {
+  font-size: 40px;
+  font-family: larseitt, sans-serif;
+  font-weight: 500;
+  background-color: #000;
+  color: #fff;
+  padding: 13px 29px;
+}
+
+.main--section {
+  max-width: 73.125rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding: 0 4vw;
+  padding-top: 4rem;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 40%;
+}
+
+.guess {
+  padding: 20px;
+  width: 100%;
+  display: block;
+  border: 2px solid #000;
+}
+
+.check {
+  margin-top: 17px;
+  padding: 13px 18px;
+  background-color: #000;
+  color: #fff;
+  border: 1px solid #000;
+  font-size: 22px;
+  font-family: circular, sans-serif;
+}
+
+.right {
+  width: 48%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.message,
+.label-score,
+.label-highscore {
+  color: #000;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  font-family: circular, sans-serif;
+  font-size: 20px;
+  font-family: circular, sans-serif;
+}
+
+.sccore,
+.highscore {
+  color: #000;
+  margin-bottom: 10px;
+  line-height: 1.1;
+  font-family: circular, sans-serif;
+  font-size: 20px;
+  font-family: circular, sans-serif;
+}
+
+body.dark-theme .content-header,
+body.dark-theme .content-paragraph,
+body.dark-theme .logo-content {
+  color: #fff;
+}
+
+body.dark-theme .start-game {
+  color: #ffffff;
+  border: 2px solid #fff;
+  background-color: #000000;
+}
+
+body.dark-theme .game-header-wrapper {
+  background-color: #000;
+}
+
+body.dark-theme .between, body.dark-theme .again, body.dark-theme .question, body.dark-theme .check {
+  background-color: #fff;
+  color: #000;
+}
+
+body.dark-theme .guess-content, body.dark-theme .message, body.dark-theme .label-score, body.dark-theme .score, body.dark-theme .label-highscore, body.dark-theme .highscore {
+  color: #fff;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */

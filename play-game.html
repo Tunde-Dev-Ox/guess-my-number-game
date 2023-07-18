@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/CSS/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap"
+   rel="stylesheet"
+  />
+  <title>Predict my lucky number</title>
+ </head>
+ <body>
+  <div class="main-body">
+   <header class="game-header-wrapper">
+    <div class="nav-wrapper">
+     <div class="logo">
+      <a href="/index.html" class="logo-content">Guess Game</a>
+     </div>
+     <!-- I want to build the darkmode icon here -->
+     <div class="toggle">
+      <input type="checkbox" name="toggle" id="toggle" />
+      <label for="toggle"></label>
+     </div>
+    </div>
+   </header>
+   <main class="play-game-main">
+    <div class="top-nav">
+     <p class="between">(Between 1 and 20)</p>
+     <button class="btn again">Again!</button>
+    </div>
+    <div class="guess--wrapper">
+     <h1 class="guess-content"> guess my number </h1>
+     <p class="question">?</p>
+    </div>
+    <div class="main--section">
+     <div class="left">
+      <input type="number" class="guess" />
+      <button class="btn check">Check!</button>
+     </div>
+     <div class="right">
+      <p class="message">Start guessing...</p>
+      <p class="label-score">💯 Score: <span class="score">20</span></p>
+      <p class="label-highscore">
+       🥇 Highscore: <span class="highscore">0</span>
+      </p>
+     </div>
+    </div>
+   </main>
+  </div>
+  <script src="/index.js"></script>
+ </body>
+</html>

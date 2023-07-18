@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/CSS/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+   href="https://fonts.googleapis.com/css2?family=Dosis:wght@500&display=swap"
+   rel="stylesheet"
+  />
+  <title>Home | Predict my lucky number</title>
+ </head>
+ <body>
+  <main class="main-body">
+   <header class="game-header-wrapper">
+    <div class="nav-wrapper">
+     <div class="logo">
+      <a href="/index.html" class="logo-content">Guess Game</a>
+     </div>
+     <!-- I want to build the darkmode icon here -->
+     <div class="toggle">
+      <input type="checkbox" name="toggle" id="toggle" />
+      <label for="toggle"></label>
+     </div>
+    </div>
+   </header>
+   <section class="home-section">
+    <div class="home--body-container">
+     <div class="video-wrapper">
+      <video
+       src="/Images/pexels-deconjon-aran-16069880 (1440p).mp4"
+       loop
+       muted
+       autoplay
+       class="game-video"
+      ></video>
+     </div>
+     <div class="content">
+      <h1 class="content-header"> Guess My Lucky Number </h1>
+      <p class="content-paragraph">
+       Welcome to the thrilling "Guess My Number" game! Prepare yourself for a
+       challenging adventure where your intuition and deduction skills will be
+       put to the test. How to Play:<br /><br />
+
+       - Think of a number between a specified range.<br /><br />
+       - We'll take turns guessing the number.<br /><br />
+       - After each guess, I'll provide a hint: "higher," "lower," or
+       "correct."<br /><br />
+       - The game continues until the correct number is guessed.<br /><br />
+       - If you guess the wrong number five times you lose. You can reset and
+       start again.<br /><br />
+       Are you ready to embark on this exciting journey? Let's dive in and
+       discover if you can unravel the mystery of my secret number!
+      </p>
+     </div>
+     <button class="start-game" onclick="location.href='./play-game.html'"
+      >Start Game</button
+     >
+    </div>
+   </section>
+  </main>
+  <script src="/index.js"></script>
+ </body>
+</html>
