@@ -24,7 +24,6 @@ const userHighScore = document.querySelector(".highscore");
 let randomNumber = Math.trunc(Math.random() * 20) + 1;
 let playAgain;
 playAgain = document.querySelector(".again");
-console.log(randomNumber);
 let score = 20;
 let highScore = 0;
 const displayMessage = function (msg) {
@@ -34,7 +33,6 @@ const displayMessage = function (msg) {
 checkBtn.addEventListener("click", function () {
  const inputNumber = Number(document.querySelector(".guess").value);
 
- console.log(inputNumber);
  if (!inputNumber) {
   message.textContent = "🚩Not a number";
  } else if (inputNumber === randomNumber) {
