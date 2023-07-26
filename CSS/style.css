@@ -46,7 +46,7 @@ body .main-body {
 }
 
 .logo-content {
-  font-size: 16px;
+  font-size: 24px;
   font-weight: 600;
   line-height: 1.1;
   text-decoration: none;
@@ -151,6 +151,7 @@ body.dark-theme {
   color: #fff;
   border-radius: 10px;
   font-size: 28px;
+  cursor: pointer;
 }
 
 .play-game-main {
@@ -227,10 +228,17 @@ body.dark-theme {
   width: 40%;
 }
 
+.btn {
+  cursor: pointer;
+}
+
 .guess {
   padding: 20px;
   width: 100%;
   display: block;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 1.1;
   border: 2px solid #000;
 }
 
@@ -242,6 +250,7 @@ body.dark-theme {
   border: 1px solid #000;
   font-size: 22px;
   font-family: circular, sans-serif;
+  cursor: pointer;
 }
 
 .right {
